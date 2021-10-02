@@ -10,5 +10,10 @@ class Chel0(pygame.sprite.Sprite):
         self.pos_x = pos_x
         self.pos_y = pos_y
         self.speed = 3
-        self.walk_back_sprits, self.walk_front_spites = [chel_22!,chel_6,chel_10,chel_15], [chel0,chel_4,chel_8,chel_13]
-        self.walk_right_sprits, self.walk_left_sprites = [chel_3,chel_7,chel_11,], []
+        self.walk_back_sprits, self.walk_front_spites = [], []
+        self.walk_right_sprits, self.walk_left_sprites = [], []
+        for i in range(4):
+			self.walk_back_sprits.append(pygame.image.load(self.animal_type+'/'+self.animal_type+'_walk_back'+str(i+1)+'.png'))
+			self.walk_front_spites.append(pygame.image.load(self.animal_type+'/'+self.animal_type+'_walk_front'+str(i+1)+'.png'))
+			self.walk_right_sprits.append(pygame.image.load(self.animal_type+'/'+self.animal_type+'_walk_right'+str(i+1)+'.png'))
+			self.self.walk_left_sprites.append(pygame.image.load(self.animal_type+'/'+self.animal_type+'_walk_left'+str(i+1)+'.png'))
